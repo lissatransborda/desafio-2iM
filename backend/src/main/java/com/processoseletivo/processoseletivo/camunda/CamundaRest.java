@@ -17,7 +17,7 @@ import java.time.Duration;
 
 @Component
 public class CamundaRest {
-    @Value("${camunda.url:http://localhost:8000/engine-rest}")
+    @Value("${camunda.url}")
     private String camundaUrl;
 
     private final Gson gson = new Gson();

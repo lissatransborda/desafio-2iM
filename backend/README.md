@@ -20,8 +20,10 @@ Os 3 principais objetivos do backend do projeto são:
 
 ## Bancos de dados
 
-- H2
-- PostgreSQL
+Desenvolvimento: H2
+Produção: PostgreSQL
+
+> Arquivo SQL do banco de dados disponível em `database.sql`
 
 ## Arquitetura
 
