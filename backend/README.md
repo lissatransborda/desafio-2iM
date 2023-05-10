@@ -25,6 +25,16 @@ Produção: PostgreSQL
 
 > Arquivo SQL do banco de dados disponível em `database.sql`
 
+## Variáveis de ambiente para produção
+
+- `CAMUNDA_URL` - URL da instância no Camunda
+- `DATABASE_URL` - URL do banco de dados
+- `DATABASE_USER` - Usuário no banco de dados
+- `DATABASE_PASSWORD` - Senha do usuário do banco de dados
+- `DATABASE_NAME` - Nome do banco de dados
+
+> Para ativar o modo de produção, use a variável de sistema `spring_profiles_active=prod`
+
 ## Arquitetura
 
 O projeto é um MVC, com uma entidade principal, sendo `Profile`, e algumas auxiliares para repostas de requisições, tanto ao cliente, quanto ao Camunda.
