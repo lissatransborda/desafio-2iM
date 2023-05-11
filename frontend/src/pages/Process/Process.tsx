@@ -41,7 +41,6 @@ function Process() {
         const data = await axios.get(`${BACKEND_URL}/profile/${profileId}`);
         const response: ProfileResponse = data.data;
         setProfileResponse(response);
-        console.log(profileResponse);
       } catch (e: any) {
         if (e.code === "ERR_BAD_REQUEST") {
           navigate("/candidatura");

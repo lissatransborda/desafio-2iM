@@ -136,6 +136,7 @@ function JobApplication() {
             <select
               {...register("databaseExperience")}
               value={databaseExperience}
+              onChange={(e) => setDatabaseExperience(e.target.value)}
               className="experienceLevelExperience"
               name="databaseExperience"
             >
