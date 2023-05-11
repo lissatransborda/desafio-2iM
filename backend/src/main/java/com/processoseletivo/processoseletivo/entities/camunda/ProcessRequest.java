@@ -3,6 +3,7 @@ package com.processoseletivo.processoseletivo.entities.camunda;
 import com.processoseletivo.processoseletivo.entities.Profile;
 
 public class ProcessRequest{
+    public String key = "ProcessoSeletivo";
     public String businessKey;
     public Variables variables;
 
