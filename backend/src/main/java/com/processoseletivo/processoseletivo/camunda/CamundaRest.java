@@ -35,8 +35,7 @@ public class CamundaRest {
         HttpEntity<String> request = new HttpEntity<>(json, headers);
 
         try{
-//            String responseJson = restTemplate.postForObject(camundaUrl + "/process-definition/key/ProcessoSeletivo/start", request, String.class);
-            String responseJson = "{\"links\":[{\"method\":\"GET\",\"href\":\"http://35.215.196.4:8088/engine-rest/process-instance/f74fb532-ee25-11ed-ba2a-0242ac170002\",\"rel\":\"self\"}],\"id\":\"f74fb532-ee25-11ed-ba2a-0242ac170002\",\"definitionId\":\"ProcessoSeletivo:3:26f9a9af-eb8f-11ed-ba2a-0242ac170002\",\"businessKey\":\"lissateste742\",\"caseInstanceId\":null,\"ended\":false,\"suspended\":false,\"tenantId\":null}";
+            String responseJson = restTemplate.postForObject(camundaUrl + "/process-definition/key/ProcessoSeletivo/start", request, String.class);
             return gson.fromJson(responseJson, ConsultedProcess.class);
         }catch (HttpClientErrorException e){
             return null;
