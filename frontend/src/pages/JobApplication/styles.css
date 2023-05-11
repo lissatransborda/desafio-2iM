@@ -1,0 +1,50 @@
+.jobApplicationMain {
+  margin: auto;
+  width: 30vw;
+  padding: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 10vh;
+  background-color: #fbfbfb;
+  border-style: solid;
+  border-color: #ededed;
+  border-radius: 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .jobApplicationMain {
+    width: 80vw;
+  }
+}
+
+.applicationForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.applicationFormInput {
+  margin: 0.3em;
+  font-size: 2ch;
+}
+
+.experienceLevelDiv {
+  padding: 0.6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.labelExperienceLevel > span {
+  font-size: 2ch;
+  margin-right: 0.5em;
+}
+
+.jobApplicationButton {
+  font-size: 2.5ch;
+  margin-top: 1em;
+  background-color: var(--lightGreen);
+  border-style: solid;
+  border-radius: 0.2em;
+  padding: 0.5em;
+}
