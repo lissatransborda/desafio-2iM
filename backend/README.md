@@ -27,7 +27,7 @@ O projeto é um MVC, com uma entidade principal, sendo `Profile`, e algumas auxi
 Desenvolvimento: H2
 Produção: PostgreSQL
 
-> Arquivo SQL do banco de dados disponível em `database.sql`
+> Arquivo SQL do banco de dados disponível em `../database/database.sql`
 
 ## Variáveis de ambiente para produção
 
