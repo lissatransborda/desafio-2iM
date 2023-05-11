@@ -29,41 +29,49 @@ public class Profile {
     @Size(max = 60)
     @Pattern(regexp = "^[a-zA-Z0-9.\\-\\/+=@_ ]*$")
     @Getter
+    @Setter
     String name;
 
     @Column(unique = true)
     @Email
     @Getter
+    @Setter
     String email;
 
     @Column(length = 15, unique = true)
     @Getter
     @Size(max = 15)
+    @Setter
     String phoneNumber;
 
     @Enumerated(EnumType.ORDINAL)
     @NotNull
     @Getter
+    @Setter
     Experience frontendExperience;
 
     @Enumerated(EnumType.ORDINAL)
     @NotNull
     @Getter
+    @Setter
     Experience backendExperience;
 
     @Enumerated(EnumType.ORDINAL)
     @NotNull
     @Getter
+    @Setter
     Experience databaseExperience;
 
     @Enumerated(EnumType.ORDINAL)
     @NotNull
     @Getter
+    @Setter
     Experience camundaExperience;
 
     @Enumerated(EnumType.ORDINAL)
     @NotNull
     @Getter
+    @Setter
     Experience healthExperience;
 
     public enum Experience {

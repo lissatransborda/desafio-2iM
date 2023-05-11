@@ -39,6 +39,10 @@ Produção: PostgreSQL
 
 > Para ativar o modo de produção, use a variável de sistema `spring_profiles_active=prod`
 
+## Testes
+
+Para executar os testes unitários do projeto, use a tarefa `test` do Gradle.
+
 ## Docker
 
 Para criar uma imagem do projeto usando o Docker, utilize o comando:
