@@ -72,7 +72,7 @@ Corpo:
 
 Exemplo de resposta:
 
-```json
+```
 46cb4941-94c6-4037-961f-46af27fc0651
 ```
 
