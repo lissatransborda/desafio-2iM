@@ -10,8 +10,8 @@ Para isso, é necessário pegar algumas informações específicas do perfil (to
 
 ## Projetos
 
-- `/backend` - Responsável por criar a nova candidatura e iniciar o processo no Camunda
-- `/frontend` - Responsável pelas telas e usabilidade da API do Backend, permitindo o acompanhemento do processo
+- `/backend` - Responsável por criar a nova candidatura e iniciar o processo no Camunda;
+- `/frontend` - Responsável pelas telas e usabilidade da API do Backend, permitindo a inserção da candidatura e acompanhamento da mesma
 
 ## Tecnologias
 
