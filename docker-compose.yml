@@ -1,0 +1,41 @@
+services:
+  db:
+    image: 'postgres'
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: processoseletivo
+    volumes:
+      - postgres-data:/var/lib/postgresql/data/
+
+  backend:
+    build: 
+      context: backend
+    ports:
+      - 8080:8080
+    depends_on:
+      - "db"
+    environment:
+      spring_profiles_active: prod
+      PORT: 8080
+      CAMUNDA_URL: http://35.215.196.4:8088/engine-rest
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_URL: db:5432
+      DATABASE_NAME: processoseletivo
+
+  frontend:
+    build:
+      context: frontend
+    ports:
+      - 3000:3000
+    depends_on:
+      - "backend"
+    environment:
+      REACT_APP_BACKEND_URL: backend:8080
+
+volumes:
+  postgres-data:
