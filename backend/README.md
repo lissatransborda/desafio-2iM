@@ -8,6 +8,10 @@ Os 3 principais objetivos do backend do projeto são:
 - Inserir esse perfil na instância do Camunda;
 - Retornar as informações do perfil, e o estado do perfil na vaga;
 
+## Arquitetura
+
+O projeto é um MVC, com uma entidade principal, sendo `Profile`, e algumas auxiliares para repostas de requisições, tanto ao cliente, quanto ao Camunda.
+
 ## Tecnologias
 
 - Java
@@ -35,9 +39,13 @@ Produção: PostgreSQL
 
 > Para ativar o modo de produção, use a variável de sistema `spring_profiles_active=prod`
 
-## Arquitetura
+## Docker
 
-O projeto é um MVC, com uma entidade principal, sendo `Profile`, e algumas auxiliares para repostas de requisições, tanto ao cliente, quanto ao Camunda.
+Para criar uma imagem do projeto usando o Docker, utilize o comando:
+
+```
+docker build -t [imagem] .
+```
 
 ## Rotas
 

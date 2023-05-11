@@ -20,6 +20,14 @@ Para isso, é necessário pegar algumas informações específicas do perfil (to
 - Camunda (via API REST)
 - Docker
 
+## Docker Compose
+
+Todos os projetos tem Dockerfile's, e também um docker compose, que pode ser iniciado com:
+
+```sh
+docker-compose up
+```
+
 ## Considerações finais
 
 Foi um desafio muito satisfatório criar esses dois projetos. No começo me parecia complicado, mas depois que fiz um diagrama com todos os processos necessários, ficou mais fácil organizar as ideias, e começar o projeto.

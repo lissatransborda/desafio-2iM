@@ -19,6 +19,14 @@ Os 2 principais objetos do frontend do projeto são:
 
 - `REACT_APP_BACKEND_URL` - URL do backend do projeto
 
+## Docker
+
+Para criar uma imagem do projeto usando o Docker, utilize o comando:
+
+```
+docker build -t [imagem] .
+```
+
 ## Páginas
 
 - `/` - Página Home. Apenas contém um botão que encaminha para o formulário de inscrição na vaga;
